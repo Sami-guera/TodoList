@@ -1,0 +1,25 @@
+Lundi matin:
+	matinée passée a setup l'environnement Strapi en back et React 
+	en front, problème : Strapi ne supporte pas de version de node 
+	supérieur à "20" donc j'ai pus m'amuser avec nvm pour downgrade
+	mon node
+	la doc react/strapi présente ici : https://bit.ly/3RuPsJW
+	reste de la matinée passée a regarder aussi la doc de strapi 
+	setup la database MySQL "todoList"
+	et à s'occuper de ma recherche d'alternance.
+		
+lundi aprèm:
+	j'ai pus faire une connexion/inscription en galérant un peu à 
+	trouver le format attendu par Strapi pour recevoir les 		
+	inscriptions/connexion + découverte du pannel admin de Strapi.
+		
+	pour l'instant, il n'y a de style nulle part on s'en occupera 
+	une fois toutes les fonctionnalités atteintes, d'ailleurs :
+			
+	ordre des tâches pour ce soir :
+	-push
+	-flécher le parcour utilisateur puis lister les fonctionnalités 
+	souhaitées
+	-développer un max pour être le moins sous pression possible 
+	demain 
+		 

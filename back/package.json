@@ -7,30 +7,32 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi",
-    "deploy": "strapi deploy"
+    "strapi": "strapi"
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.25.0",
-    "@strapi/plugin-users-permissions": "4.25.0",
-    "@strapi/plugin-i18n": "4.25.0",
-    "@strapi/plugin-cloud": "4.25.0",
-    "mysql": "2.18.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "5.3.4",
-    "styled-components": "5.3.3"
+    "strapi": "3.6.11",
+    "strapi-admin": "3.6.11",
+    "strapi-utils": "3.6.11",
+    "strapi-plugin-content-type-builder": "3.6.11",
+    "strapi-plugin-content-manager": "3.6.11",
+    "strapi-plugin-users-permissions": "3.6.11",
+    "strapi-plugin-email": "3.6.11",
+    "strapi-plugin-upload": "3.6.11",
+    "strapi-plugin-i18n": "3.6.11",
+    "strapi-connector-bookshelf": "3.6.11",
+    "knex": "0.21.18",
+    "mysql": "2.18.1"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "61f1bf31-236c-4341-9c80-6b77339f2bfc"
+    "uuid": "f95e1077-0c3d-418b-a7ad-acaec96f77e9"
   },
   "engines": {
-    "node": ">=18.0.0 <=20.x.x",
-    "npm": ">=6.0.0"
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
   },
   "license": "MIT"
 }
