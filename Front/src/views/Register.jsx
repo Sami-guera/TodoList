@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 
 
 function Register() {
@@ -48,12 +48,14 @@ function Register() {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="register">
             <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="username" required />
             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email" required />
             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="password" required />
             <input type="password" value={passwordConf} onChange={(e) => setPasswordConf(e.target.value)} placeholder="password-confirmation" required />
-            <input type="submit" value="valider" />
+            <button type="submit" value="valider" >s'inscrire</button>
+            <Link to={"/login"} className="link-to-register">j'ai déjà un compte</Link>
+       
         </form>
     )
 } export default Register

@@ -13,12 +13,12 @@ function TodoCard({ todo, onDelete, onUpdate }) {
       };
 
     return (
-        <div className="TodoCard">
+        <div className="todoCard">
             {edition ? (
-                <form onSubmit={handleEditSubmit}>
+                <form onSubmit={handleEditSubmit} className="editForm">
                     <input type="text" value={nouveauTitre} onChange={(e) => setNouveauTitre(e.target.value)} />
                     <input type="text" value={nouvelleDesc} onChange={(e) => setNouvelleDesc(e.target.value)} />
-                    <input type="submit" value="enregistrer" />
+                    <button type="submit">enregistrer</button>
                     <button onClick={() => setEdition(false)}>annuler</button>
                
                 </form>

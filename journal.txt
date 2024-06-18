@@ -60,6 +60,8 @@ mardi matin :
 	je note ici que les routes sont trouvables 
 	dans settings/Roles => permissions (a chaque action comme find, 
 	create.. est associé un boutons paramètres qui , display la route)
+	+ chaque fetch doit être accompagné d'un Authorization à savoir le 		
+	token 
 	
 	la table étant crée on passe au form de création de todo, petit 
 	problème, on reçoit une error 40"(forbiden) donc il faut se 
@@ -107,6 +109,9 @@ mardi matin :
 	avait UNE TYPO "todo au lieu de todos"    :( 
 	
 	je peux enfin creer, éditer et supprimer un todo ! 
+	
+15H30: 
+	léger style ajouté
 	
 	
 

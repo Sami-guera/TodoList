@@ -56,11 +56,8 @@ getTask();
 
     return (
         <div className="todoList">
-            <p>oui</p>
             {todoList.map(todo => (
-                <li key={todo.id}>
                     <TodoCard todo={todo} onDelete={handleDelete} onUpdate={handleUpdate} />
-                </li>
             ))}
         </div>
     )

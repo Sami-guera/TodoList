@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Login(){
 
@@ -33,17 +34,15 @@ function Login(){
                 console.log(data.user.username)
                 window.location.href = `/home/${data.user.username}`;
             }
-    
-
-
 
     }
     
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="login">
             <input type="email" value={email} placeholder="email" onChange={(e) => setEmail(e.target.value)}/>
             <input type="password" value={password} placeholder="password" onChange={(e) => setPassword(e.target.value)}/>
-            <input type="submit" value="login"/>
+            <button type="submit" value="valider" >se connecter</button>
+        <Link to={"/register"} className="link-to-register">s'inscrire ?</Link>
         </form>
     )
 }export default Login

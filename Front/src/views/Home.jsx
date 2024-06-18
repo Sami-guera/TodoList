@@ -8,7 +8,7 @@ const user = useParams().username;
 
 
     return (
-        <div>
+        <div className="home">
        <p>Bienvenue <strong>{user}</strong></p>
        <FormTodoCreate/>
        <GetTodos />

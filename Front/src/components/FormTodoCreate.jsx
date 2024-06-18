@@ -35,11 +35,11 @@ function FormTodoCreate() {
     }
 
     return (
-        <div className="TodoCreate">
+        <div className="todoCreate">
             <h4>Formulaire de création de tâches</h4>
             <form onSubmit={handleSubmit}>
-                <input type="text" value={titre} required onChange={(e) => setTitre(e.target.value)} />
-                <input type="text" value={desc} onChange={(e) => setDesc(e.target.value)} />
+                <input type="text" value={titre} required onChange={(e) => setTitre(e.target.value)} placeholder="titre"/>
+                <input type="text" value={desc} onChange={(e) => setDesc(e.target.value)}  placeholder="description (facultative)"/>
                 <input type="submit" value={"enregistrer"} />
             </form>
         </div>
