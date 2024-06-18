@@ -88,6 +88,26 @@ mardi matin :
 		
 		-au moins une demi heure de style parce qu'actuellement le site 		 
 		 ressemble plus à une chambre d'hopital qu'a un bloc-note
-		
-	   
+		 
+		 
+13H20:
+	Finalement on vas faire la Card de Todo maintenant (code plus propre)
+	on crée les fonctions d'éditions côté "GetTodos" et on les passe comme 
+	props (avec le todo) à TodoCard, todocard return un ternaire (selon 
+	que l'édition soit en cours où non 
+	
+	-handleDeleteTodo : fais un fetch avec l'id du todo et la method 
+	  		    'delete'
+	-handleUpdateTodo : fais un fetch avec id et method 'put'
+	
+	
+14H49: 
+	la dernière heure as été consacrée à me reformer sur le passage de 
+	données entre composants(principalement sur la fonction d'update qui 
+	avait UNE TYPO "todo au lieu de todos"    :( 
+	
+	je peux enfin creer, éditer et supprimer un todo ! 
+	
+	
+
  
