@@ -22,4 +22,72 @@ lundi aprèm:
 	souhaitées
 	-développer un max pour être le moins sous pression possible 
 	demain 
-		 
+
+lundi soir:
+	planification de la journée du lendemain a savoir :
+	
+	parcours user: 
+	
+	-Choix entre log et reg
+	-log/arriver home
+	-reg/log/ arriver home
+
+
+	composition : 
+	La home page :
+	-navbar (a faire, fait, profil?)
+	Composant(on parle des affichages) :
+
+	A faire(liste des to-do(avec un bouton modifier et un bouton fait qui
+	change le champ booléen) + form d'ajout de to-do)
+	Fait (à supprimer)
+	On vas chercher dans la table les todos "a faire"
+
+	Todo card : titre, description radio box "fait" (si cliqué la card le
+	remplace par une redio box à faire)
+	Bouton de validation (fait un fetch)
+
+
+mardi matin : 
+	-faire la table de todo
+
+	Champ : titre requis
+	Champ : description non requise
+	Champ : statut faire ou à faire (bool)
+	Champ : Timestamp
+	
+	
+	je note ici que les routes sont trouvables 
+	dans settings/Roles => permissions (a chaque action comme find, 
+	create.. est associé un boutons paramètres qui , display la route)
+	
+	la table étant crée on passe au form de création de todo, petit 
+	problème, on reçoit une error 40"(forbiden) donc il faut se 
+	renseigner sur les permissions (effectivement il faut l'autoriser dans 
+	les permissions de rôles) 
+	
+	Récupération de Todo :
+	problème, on récupère tout les todos alprs qu'on ne veut que ceux qui 
+	sont de nous, ajout d'un champ "author" au todo, et pour lefetch on 
+	donne cette addresse "http://localhost:1337/todos?author=${username}"
+	je laisse tomber la navbar vus le temps restant, on affichera sur la 
+	même page les "faits" et les "à faire" 
+	
+	11H45:
+	
+	maintenant qu'on récupère correctement NOS todos reste a faire le CRUD 
+	correspondant (case à cocher "finie", supprimer, update) le mieux 
+	serait de mapper la liste des todos sur une Card à laquelle on 
+	passerait le todo comme "Props" mais je préfère ne pas m'emmeler les
+	 pinceaux maintenant donc on vas le faire dans le composant GetTodos 
+	 directement.
+	 
+	donc programme de cet aprèm :
+		-Le formulaire de Crud des todos + les 
+	         fonctions(et fetch) associées 
+		
+		-au moins une demi heure de style parce qu'actuellement le site 		 
+		 ressemble plus à une chambre d'hopital qu'a un bloc-note
+		
+	   
+ 

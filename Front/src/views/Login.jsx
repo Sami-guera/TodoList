@@ -30,7 +30,8 @@ function Login(){
 
             }else{
                 console.log("login réussit")
-                window.location.href = "/home";
+                console.log(data.user.username)
+                window.location.href = `/home/${data.user.username}`;
             }
     
 

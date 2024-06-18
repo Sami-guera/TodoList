@@ -7,7 +7,6 @@ import Register from './views/Register';
 import Home from './views/Home';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
 <BrowserRouter>
@@ -21,7 +20,7 @@ function App() {
     <Route path="/register" element={<Register/>}></Route>
   </Routes>
   <Routes>
-    <Route path="/home" element={<Home/>}></Route>
+    <Route path="/home/:username" element={<Home/>}></Route>
   </Routes>
 </BrowserRouter>
   )
